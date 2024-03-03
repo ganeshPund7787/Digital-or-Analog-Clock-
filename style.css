@@ -47,7 +47,7 @@ body {
     height: 25vmax;
     width: 25vmax;
     border-radius: 50%;
-    background-image: url("https://www.shutterstock.com/shutterstock/photos/351530567/display_1500/stock-vector-clock-face-blank-351530567.jpg");
+    background-image: url("https://ih0.redbubble.net/image.2314591194.4225/raf,360x360,075,t,fafafa:ca443f4786.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -68,16 +68,16 @@ body {
     height: 20%;
     top: 29.3%;
     left: 48.9%;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 #minutes {
     width: 1%;
-    height: 25%;
-    top: 25%;
+    height: 26%;
+    top: 24%;
     left: 49%;
     opacity: 0.8;
-}  
+}
 
 #seconds {
     width: 0.7%;
@@ -89,7 +89,7 @@ body {
 }
 
 @media (max-width: 600px) {
-    .inner-box{
+    .inner-box {
         height: 18em;
     }
 }
