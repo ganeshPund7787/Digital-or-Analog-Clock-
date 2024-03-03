@@ -1,0 +1,95 @@
+body {
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    background-color: black;
+}
+
+.f-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-box {
+    height: 30em;
+    width: 41vmax;
+    align-items: center;
+}
+
+.digital-clock-box {
+    height: 7vmax;
+    width: 25vmax;
+    font-size: 3vmax;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: red;
+    box-shadow: 0px 0px 60px 20px cyan;
+    border: 2px dashed red;
+    animation: fadeInOut 2s ease infinite;
+    background: transparent;
+}
+
+@keyframes fadeInOut {
+
+    0%,
+    100% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+/*  Analog Clock */
+.analog-clock-box {
+    height: 25vmax;
+    width: 25vmax;
+    border-radius: 50%;
+    background-image: url("https://www.shutterstock.com/shutterstock/photos/351530567/display_1500/stock-vector-clock-face-blank-351530567.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+#hour,
+#minutes,
+#seconds {
+    position: absolute;
+    background: yellow;
+    border-radius: 1vw;
+    transform-origin: bottom;
+}
+
+#hour {
+    width: 1.5%;
+    height: 20%;
+    top: 29.3%;
+    left: 48.9%;
+    opacity: 0.8;
+}
+
+#minutes {
+    width: 1%;
+    height: 25%;
+    top: 25%;
+    left: 49%;
+    opacity: 0.8;
+}  
+
+#seconds {
+    width: 0.7%;
+    height: 33%;
+    top: 17%;
+    left: 49.1%;
+    background-color: red;
+    opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    .inner-box{
+        height: 18em;
+    }
+}
